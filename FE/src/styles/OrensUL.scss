@@ -1,0 +1,26 @@
+@import './OrensMixins.scss';
+
+@mixin genericUnsortedListContainer {
+    @include listFont;
+    margin: auto;
+    width: clamp(320px, 90%, 700px);
+    border: none;
+    transition: all 0.1s;
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        padding: 0.4rem;
+        border-radius: 0.4rem;
+
+        background-color: $listBackground;
+        color: white;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        list-style-type: none;
+    }
+}

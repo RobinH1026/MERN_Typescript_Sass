@@ -1,0 +1,33 @@
+/* 
+    You can change hue_main to change the whole pallete
+    Hue 320 Pink 100 Green 200 Blue ...
+    For more hue check this out https://www.google.com/search?q=hue+circle+css&ei=Ql0vY9XONITNgQbWkr6wCA&ved=0ahUKEwjV97XGl676AhWEZsAKHVaJD4YQ4dUDCA4&uact=5&oq=hue+circle+css&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEB4QFjIFCAAQhgMyBQgAEIYDMgUIABCGAzIFCAAQhgM6CggAEEcQ1gQQsAM6BQgAEIAESgQIQRgASgQIRhgAUMwCWJIJYOYJaAFwAXgAgAGVAYgBoAOSAQMwLjOYAQCgAQHIAQjAAQE&sclient=gws-wiz#imgrc=Egfk3xcRG8j7AM
+*/
+$hue_main: 330;
+$counter_hue: 180;
+
+/*
+    Soft saturation will be half of strong saturation
+*/
+$sat_strong: 60%;
+$sat_soft: $sat_strong * 0.5;
+
+/*  
+    Lightness should be generic
+    I found the 20-80 a nice contrast
+    between background (formBackground)
+    and foreground (buttBackground)
+*/
+$light_low: 20%;
+$light_med: 80%;
+$light_high: 97%; //almost white
+
+$fontColor_light: white;
+$fontColor_dark: black;
+
+$buttBackground: hsl($hue_main, $sat_strong, $light_low);
+$buttBackground_onHover: hsl($hue_main, $sat_strong, $light_low * 1.4);
+$buttBackground_disabled: hsl($hue_main, $sat_soft, $light_low * 2);
+$formBackground: hsl($hue_main, $sat_soft, $light_med);
+$pageBackground: hsl($hue_main, $sat_soft, $light_high);
+$listBackground: hsl($counter_hue, $sat_soft, $light_low * 1.5);

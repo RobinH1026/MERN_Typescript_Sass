@@ -1,0 +1,22 @@
+// input font size will be a percentage of label font size
+$labelFontSize: 1.1rem;
+$inputFontSize: $labelFontSize * 0.8;
+$labelFontWeight: 500;
+$inputFontWeight: $labelFontWeight * 0.8;
+
+$listFontSize: $inputFontSize * 1.2;
+$listFontWeight: $inputFontSize;
+// For now list font size is not response
+
+// button width will be half of container width but with min and max
+$containerWidth: 500px;
+$buttonWidth: $containerWidth * 0.5;
+
+// link the padding of button to input
+$inputPadding: 0.8rem;
+$buttonPadding: $inputPadding * 1.5;
+
+// Responsive
+$smallScreen_Factor: 1.3;
+$ssLabelFontSize: $labelFontSize * $smallScreen_Factor;
+$ssInputFontSize: $inputFontSize * $smallScreen_Factor;
